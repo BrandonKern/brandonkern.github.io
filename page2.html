@@ -8,7 +8,7 @@
             text-align: center;
         }
         div {
-            margin-top: 10px;
+            margin-top: 12px;
             padding: 10px;
             padding-right: 30px;
             width: 910;
@@ -19,7 +19,11 @@
             font-weight: 500;
             background-color: #044E54;
             color: white;
-            font-size: 20px;
+            font-size: 25px;
+            margin-bottom: 0px;
+            margin-left: 10px;
+            padding: 5px;
+            width: 910;
         }
         .painting {
             width: 100px;
@@ -31,15 +35,17 @@
         h2 {
             background-color: #0E7C86;
             color: white;
-        }
-        table:first-child  {
-            background-color: #14919B;
+            height: 40px;
+            font-size: 24px;
+            font-weight: 300;
         }
         table {
             border-collapse: collapse;
         }
         .formitems {
             width: 880;
+            padding-top: 0px;
+            padding-bottom: 0px;
         }
         .submitButton {
             background-color: #0E7C86;
@@ -55,10 +61,8 @@
             border-radius: 4px;
             border: 3px;
         }
-        .actionButton:hover, .actionButton:focus{
-            color: #fff;
-            outline: 0;
-
+        .actionButton .blueButton {
+            background-color: #0E7C86;
         }
         .roundedSelector {
             border: none;
@@ -66,14 +70,24 @@
             outline: none;
             border-radius: 4px;
         }
+        tr {
+            border-bottom: 1px solid;
+            border-color: #D3CEC4;
+        }
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        table:first-child  {
+            background-color: #14919B;
+        }
     </style>
 </head>
 <body>
-    <div>
         <h1 class="title"> Advanced Art Work</h1>
-    </div>
+
     <form method="POST" action="http://www.randyconnolly.com/tests/process.php">
-        <div>
+        <div style="text-align: left;">
             <input name="search" type="text" id="search" placeholder="search" class="roundedSelector">
             <label>Subject:</label>
             <input type="radio" name = "subject" value="History" id="History">
@@ -89,9 +103,9 @@
             </select>
         </div>
         <div>
-            <h2 class="formitems">Paintings</h2>
-            <table class="formitems">
-                <tr class="tabletitle">
+            <h2 class="formitems" style="margin-bottom: 0px; margin-top: 0px; padding-top: 5px;">Paintings</h2>
+            <table class="formitems" style="margin-top: 0px;">
+                <tr class="tabletitle" style="padding-bottom: 0px;">
                     <td></td>
                     <td></td>
                     <td>Title</td>
@@ -108,7 +122,7 @@
                     <td>1883</td>
                     <td>Realism</td>
                     <td>
-                        <button class="actionButton" type="button"><img src="edit.png"></button>
+                        <button class="actionButton" style="background-color: #38BEC9;" class="blueButton" type="button"><img src="edit.png"></button>
                         <button class="actionButton" type="button"><img src="archive.png"></button>
                         <button class="actionButton" type="button"><img src="delete.png"></button>
                     </td>
@@ -121,7 +135,7 @@
                     <td>1889</td>
                     <td>Realism</td>
                     <td>
-                        <button class="actionButton" type="button"><img src="edit.png"></button>
+                        <button class="actionButton" style="background-color: #38BEC9;" class="blueButton" type="button"><img src="edit.png"></button>
                         <button class="actionButton" type="button"><img src="archive.png"></button>
                         <button class="actionButton" type="button"><img src="delete.png"></button>
                     </td>
@@ -134,7 +148,7 @@
                     <td>1885</td>
                     <td>Realism</td>
                     <td>
-                        <button class="actionButton" type="button"><img src="edit.png"></button>
+                        <button class="actionButton" style="background-color: #38BEC9;" class="blueButton" type="button"><img src="edit.png"></button>
                         <button class="actionButton" type="button"><img src="archive.png"></button>
                         <button class="actionButton" type="button"><img src="delete.png"></button>
                     </td>
@@ -147,7 +161,7 @@
                     <td>1670</td>
                     <td>Dutch Golden Age</td>
                     <td>
-                        <button class="actionButton" type="button"><img src="edit.png"></button>
+                        <button class="actionButton" style="background-color: #38BEC9;" type="button"><img src="edit.png"></button>
                         <button class="actionButton" type="button"><img src="archive.png"></button>
                         <button class="actionButton" type="button"><img src="delete.png"></button>
                     </td>
