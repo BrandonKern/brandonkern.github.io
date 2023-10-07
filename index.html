@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewliort" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #FAF9F7;
+        }
+        div.main {
+            width: 910px;
+        }
+        /*box shadow from https://getcssscan.com/css-box-shadow-examples*/
+        div.Plans {
+            padding: 1px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            background-color: #E8E6E1;
+            margin-bottom: 50px;
+        }
+        div.studentBlock {
+                display : inline-block;
+                width: 300px;
+                text-align: center;
+                background-color: white;
+        }
+        ul {
+                list-style-type: none;
+                padding: 0px;
+        }
+        li {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        div:nth-child(2n +3) {
+            background-color: #2F4F4F;
+            color: white;
+        }
+        div.studentBlock li:nth-child(2n+4) {
+            background-color: rgba(47,59,64,0.35);
+        }
+        button{
+            background-color: #3a6ba5;
+            color: white;
+            border: none;
+            box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 29px 0px;
+            text-align: center;
+            padding: 14px 100px;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #437CBF;
+        }
+        div > li {
+            font-size: 24px;
+        }
+        li > strong {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 36;
+        }
+        ul.checkmarks > li {
+            background-image: url("checkmark.svg");
+            background-size: 24px;
+            background-repeat: no-repeat;
+            padding-left: 24px;
+        }
+        strong.rate {
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class ="Plans">
+            <h1 align="center"><strong>Assignment #1 Student Plans</strong></h1>
+            <div class="studentBlock">
+                <ul>
+                    <li><Strong>Budget Student</Strong></li>
+                    <li style = "background-color: #5BB189;"><strong style = "font-size: 36; font-weight: 800;">$10</strong>/mo</li>
+                    <li><Strong>512MB</Strong> Student Memory</li>
+                    <li><Strong>1TB</Strong> Patience</li>
+                    <li><Strong>20GB</Strong> Exam Recall</li>
+                    <li><Strong>0</Strong> Quiz A Grades</li>
+                    <li><a href="page2.html"><button type="button">View Form</button></a></li>
+                </ul>
+            </div>
+            <div class="studentBlock">
+                <ul>
+                    <li><Strong>Standard Student</Strong></li>
+                    <li style = "background-color: #4B0082;"><strong style = "font-size: 36; font-weight: 800;">$25</strong>/mo</li>
+                    <li><Strong>1GB</Strong> Student Memory</li>
+                    <li><Strong>2TB</Strong> Patience</li>
+                    <li><Strong>40GB</Strong> Exam Recall</li>
+                    <li><Strong>2</Strong> Quiz A Grades</li>
+                    <li><a href="page2.html"><button type="button">View Form</button></a></li>
+                </ul>
+                
+            </div>
+            <div class="studentBlock">
+                <ul>
+                    <li><Strong>Scholarship Student</Strong></li>
+                    <li style="background-color: #EC632A;"><strong style = "font-size: 36; font-weight: 800;">$50</strong>/mo</li>
+                    <li><Strong>16GB</Strong> Student Memory</li>
+                    <li><Strong>6TB</Strong> Patience</li>
+                    <li><Strong>80GB</Strong> Exam Recall</li>
+                    <li><Strong>3</Strong> Quiz A Grades</li>
+                    <li><a href="page2.html"><button type="button">View Form</button></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class = "confidence" style = "background-color: #2F4F4F; color: white; padding: 25px;">
+            <h1>Learn in confidence</h1>
+            <p>All our marking lilaces come with the same set of award-winning features</p>
+            <ul class = checkmarks>
+                <li>Professor anti-grumpiness filter</li>
+                <li>Promise not to use ChatGPT</li>
+                <li>Complementary copy of <a href="https://www.google.com/">Fundementals of Web Development, 3rd Edition</a></li>
+            </ul>  
+        </div>
+    </div>
+</body>
+</html>
